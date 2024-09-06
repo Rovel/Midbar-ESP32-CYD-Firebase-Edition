@@ -719,6 +719,7 @@ byte get_PS2_input_from_the_ps2_keyboard_mvn_bcg() {
 void set_stuff_for_input(String blue_inscr) {
   act = true;
   curr_key = 65;
+  tft.invertDisplay(1);
   tft.fillScreen(0x0000);
   tft.setTextSize(2);
   tft.setTextColor(0xffff);
